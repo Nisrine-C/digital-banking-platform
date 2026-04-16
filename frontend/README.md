@@ -1,27 +1,70 @@
-# DigitalBankingWeb
+# Digital Banking Platform – Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+A modern single-page web app for digital banking, built with Angular.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Development](#development)
+- [Build & Test](#build--test)
+- [Structure](#structure)
+- [License](#license)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Responsive, mobile-friendly UI (Bootstrap)
+- Customer and account management interfaces
+- Transaction lists and details
+- Consumes REST API from backend
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tech Stack
 
-## Running end-to-end tests
+- Angular 13
+- TypeScript
+- RxJS
+- Bootstrap 5
+- Bootstrap Icons
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Prerequisites
+
+- Node.js & npm
+- Angular CLI
+
+### Setup & Start
+
+```sh
+cd frontend
+npm install
+npm start
+```
+
+Opens at: [http://localhost:4200/](http://localhost:4200/)
+
+
+
+## Build & Test
+
+```sh
+npm run build      # Production build (dist/)
+npm test           # Run unit tests
+```
+
+## Structure
+
+```
+frontend/
+│
+├── README.md
+├── package.json
+├── angular.json
+├── src/
+│   └── app/...
+└── ...
+```
