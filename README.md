@@ -1,52 +1,91 @@
 # Digital Banking Platform
 
-A full-stack digital banking application built with **Spring Boot** for the backend and **Angular** for the frontend.  
-The application provides a REST API for managing customers, bank accounts, and transactions, with a modern web interface for interacting with the banking system.
+A full-stack digital banking application built with **Spring Boot** (backend) and **Angular** (frontend).
+
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+- [API Documentation](#api-documentation)
+- [Development Notes](#development-notes)
+- [License](#license)
+
+
+## Overview
+
+This platform allows:
+- Customer and account management
+- Processing credit and debit transactions
+- Viewing operation history
+- Access via REST API & responsive Angular UI
+
 
 ## Project Structure
 
-- `backend/` — Spring Boot REST API
-- `frontend/` — Angular web application
+```
+.
+├── backend/   # Spring Boot REST API
+└── frontend/  # Angular web application
+```
+
+- See dedicated READMEs in `backend/` and `frontend/` folders for further setup and info.
+
+
 
 ## Features
 
-- Customer management
-- Bank account creation
-- Current and savings account support
-- Credit and debit transactions
-- Account operation tracking
-- RESTful API documentation with Swagger/OpenAPI
-- Frontend built with Angular and Bootstrap
+- Customer onboarding and searching
+- Creation of current/savings bank accounts
+- Credit/debit operations tracking
+- Fully-documented RESTful API (Swagger/OpenAPI)
+- Modern Angular web front end
+
 
 ## Tech Stack
 
-### Backend
-- Java 17
-- Spring Boot 3.4.x
-- Spring Data JPA
-- Spring Web
-- Spring Security OAuth2 Resource Server
-- H2 Database
-- MySQL Connector
-- Lombok
-- Springdoc OpenAPI / Swagger UI
+**Backend:** Java 17, Spring Boot 3.x, Spring Data JPA, H2/MySQL, Springdoc Swagger  
+**Frontend:** Angular 13, Bootstrap 5, RxJS, TypeScript
 
-### Frontend
-- Angular 13
-- TypeScript
-- Bootstrap 5
-- Bootstrap Icons
-- RxJS
 
-## Getting Started
+## Quick Start
 
 ### Prerequisites
+
 - Java 17+
-- Node.js and npm
-- Angular CLI
+- Node.js (v14+ recommended) & npm
 - Maven
+- Angular CLI
 
 ### Backend
-```bash
+
+```sh
 cd backend
 ./mvnw spring-boot:run
+```
+
+### Frontend
+
+```sh
+cd frontend
+npm install
+npm start
+```
+
+Frontend: [http://localhost:4200/](http://localhost:4200/)
+
+
+
+## API Documentation
+
+Swagger UI is available after starting the backend (see backend README for exact URL).
+
+
+## Development Notes
+
+- Backend is a layered Spring Boot REST API
+- Frontend is a SPA consuming the REST API
+
